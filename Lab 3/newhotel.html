@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<htm>
+    <head>
+        <title>New Hotel Registration</title>
+        <link href="newhotel.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps" rel="stylesheet"> 
+    </head>
+    <div>
+       <body>
+      <h1>New Hotel Registration</h1>
+        <form method="POST">
+            <p>
+                <label>Name:  <br> 
+                    <input type="text" name="name" size="20" maxlength="25" pattern="[A-Za-z]+[A-Za-z\-\s]+" required>
+                </label>
+            </p>
+            <p>
+                <label>Address: <br>
+                    <textarea name="address" rows="2" cols="36" required></textarea>
+                </label>
+            </p>
+            <p>
+                <label>Phone Number: <br>
+                    <input type="tel" pattern="\(\d{3}\)\d{3}[\-]\d{4}" placeholder="(###)###-####" namek="phone" required>
+                </label>
+            </p>
+            <p>
+                <label>E-mail Address: <br>
+                    <input type="email" placeholder="address@domain.com" name="email" required>
+                </label>
+            </p>
+
+            <p>
+                <label>Age: <br>
+                    <input type="text" pattern="[0-9]+" name="age">
+                </label>
+            </p>
+            <p>
+                <label>Registration Date: <br>
+                    <input type="date" name="date"required>
+
+                </label>
+            </p>
+            <p>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear">
+            </p>
+        </form>
+
+    </body>
+</div>
+</htm>

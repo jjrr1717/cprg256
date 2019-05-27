@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Basic JSON...</title>
+	<script type="text/javascript" src="httpStateObjects.js"></script>
+</head>
+
+<body onload="httpStateObjects()">
+	<h2>Cookies - localStorage - sessionStorage</h2>
+	<br>
+	<table>
+		<thead>
+			<tr>
+				<td><strong>Feature</strong></td>
+				<td><strong>Cookies</strong></td>
+				<td><strong>localStorage</strong></td>
+				<td><strong>sessionStorage</strong></td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Maximum data size</td>
+				<td>4 KB</td>
+				<td>5 MB (10MB)</td>
+				<td>2 MB (5MB)</td>
+			</tr>
+			<tr>
+				<td>Blockable by users</td>
+				<td>yes</td>
+				<td>yes</td>
+				<td>yes</td>
+			</tr>
+			<tr>
+				<td>Auto-expire option</td>
+				<td>yes</td>
+				<td>no</td>
+				<td>yes</td>
+			</tr>
+			<tr>
+				<td>Supported data types</td>
+				<td>string only</td>
+				<td>string only</td>
+				<td>string only</td>
+			</tr>
+			<tr>
+				<td>Browser support</td>
+				<td>very high</td>
+				<td>very high</td>
+				<td>very high</td>
+			</tr>
+			<tr>
+				<td>Accessible server-side</td>
+				<td>yes</td>
+				<td>no</td>
+				<td>no</td>
+			</tr>
+			<tr>
+				<td>Data transferred: HTTP request</td>
+				<td>yes</td>
+				<td>no</td>
+				<td>no</td>
+			</tr>
+			<tr>
+				<td>Editable by users</td>
+				<td>yes</td>
+				<td>yes</td>
+				<td>yes</td>
+			</tr>
+			<tr>
+				<td>Supported on SSL</td>
+				<td>yes</td>
+				<td>n/a</td>
+				<td>n/a</td>
+			</tr>
+			<tr>
+				<td>Can be accessed on
+				</td>
+				<td>server-side &#038; client-side</td>
+				<td>client-side only</td>
+				<td>client-side only</td>
+			</tr>
+			<tr>
+				<td>Clearing / deleting</td>
+				<td>PHP, JS &#038; automatic</td>
+				<td>JS only</td>
+				<td>JS &#038; automatic</td>
+			</tr>
+			<tr>
+				<td>Lifetime</td>
+				<td>as specified</td>
+				<td>till deleted</td>
+				<td>till tab is closed</td>
+			</tr>
+			<tr>
+				<td>Secure data storage</td>
+				<td>no</td>
+				<td>no</td>
+				<td>no</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td colspan="4">Local and Session storage objects live in the browser. SOP accessibility (protocol, port, domain)</td>
+			</tr>
+			<tr>
+				<td colspan="4">Use the local storage object for PERSISTENT cases where data should never expire</td>
+			</tr>
+			<tr>
+				<td colspan="4">Use the session storage object to store data for a single browser tap session</td>
+			</tr>
+			<tr>
+				<td colspan="4">Use the cookie object only for server requests</td>
+			</tr>
+			<tr>
+				<td colspan="4"><strong>Examples: </strong></td>
+			</tr>
+			<tr>
+				<td><strong>Local Data</strong></td>
+				<td colspan="3" id="localData"></td>
+			</tr>
+			<tr>
+				<td><strong>Session Data</strong></td>
+				<td colspan="3" id="sessionData"></td>
+			</tr>
+			<tr>
+				<td><strong>Cookie Data</strong></td>
+				<td colspan="3" id="cookieData"></td>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+
+</html>

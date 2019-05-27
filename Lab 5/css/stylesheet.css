@@ -1,0 +1,159 @@
+body
+{
+    
+    width: 100%;
+    height: 100%;;
+    margin: 0%;
+    padding: 0%;
+    display: block;
+    position: relative;
+    font-family: 'Jacques Francois', serif;
+    color:honeydew;
+}
+
+strong, h1
+{
+    color:darkolivegreen;
+}
+
+p
+{
+    text-align: center;
+
+}
+
+p.invoiceOutput
+{
+    line-height: 0%;
+}
+
+p.invoiceTitle
+{
+    font-size: 200%;
+    font-weight: bolder;
+}
+
+header
+{
+    font-size: 800%;
+    text-align: center;
+    padding-top: 0%;
+    margin-top: 0%;
+
+}
+
+
+h1
+{
+    font-size: 300%;
+    text-align: center;
+}
+
+h2
+{
+    color:darkolivegreen;
+    font-weight: 900;
+}
+
+
+
+#background_image
+{
+    background-image: url("../images/background1.PNG");
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    
+}
+
+#main
+{
+    display:flex;
+    margin:0;
+}
+
+#main > nav 
+{
+    display: block;
+    width: 25%;
+    order: 1;
+    border-bottom: none;
+    line-height: 200%;
+    padding-left: 1%;
+}
+
+#main > article 
+{
+    width: 70%;
+    margin:0;
+    order: 2;
+}
+
+#main > aside 
+{
+    display: block;
+    width: 15%;
+    order: 3;
+    padding-right:5%;
+
+
+}
+
+fieldset.one
+{
+    float:left;
+}
+fieldset.two
+{
+    float:left;
+    width: 40%;
+}
+fieldset.three
+{
+    float:left;
+}
+
+fieldset.four
+{
+    float:left;
+}
+
+th, td.textData 
+{
+    padding: 1px;
+    text-align: left;
+    font-size: 150%;
+}
+
+td.numberData
+{
+    padding:1px;
+    text-align: right;
+    font-size: 150%;
+}
+
+table.center 
+{ 
+
+  margin-left:auto; 
+  margin-right:auto; 
+}
+
+img
+{
+    float: right;
+    position: relative;
+    width: 50px;
+    height: 30px;
+}
+
+img:hover
+{
+    width: 250px;
+    height: 150px;
+}
+
+a
+{
+    color: cadetblue;
+}

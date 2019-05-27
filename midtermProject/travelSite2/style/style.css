@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Lalezar');
+@import url('https://fonts.googleapis.com/css?family=Lilita+One');
+*
+{
+    margin: 0;
+}
+header
+{
+
+    height: 50px;
+    padding: 2%;
+ 
+}
+
+.logo
+{
+    display: block;
+    padding-bottom:7%;
+    border-radius: 25px;
+}
+
+#headerHeading
+{
+    position: absolute;
+    text-shadow: -4px 5px 7px dimgray;
+    font-size: 300%;
+    font-family: 'Lilita One', cursive;
+    bottom:81%;
+    right: 66%;
+}
+
+nav
+{
+    display: block;
+    position:absolute;
+    bottom:83%;
+    right:15%;
+    font-family: 'Lalezar', cursive;
+    
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+  }
+  
+  li {
+    float: right;
+    
+  }
+  
+  li a {
+    
+    display: block;
+    padding: 20px;
+    font-size: 150%;
+    color: black;  
+    text-decoration: none; 
+    
+  }
+
+  li a:hover
+  {
+      color: rgb(47, 47, 185);
+  }
+
+#myPhotos 
+{
+   
+   
+    animation: fadeIn 3s linear;
+
+    animation-iteration-count: infinite;
+}
+
+#slideDiv
+{
+    display: block;
+    padding:5%;
+}
+
+@keyframes fadeIn
+{
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
+
+#captionForImages
+{
+    display: block;
+    text-align: center;
+    font-family: 'Lilita One', cursive;
+    font-size:125%;
+    background-color: lightseagreen;
+
+
+}
+
+footer
+{
+    height: 130px;
+}
+
+#topFooter
+{
+    height: 80px;
+    background-color: lightgray;
+}
+
+#addressFooter
+{
+    display: block;
+    float: left;
+    margin-right: 18%;
+    margin-left: 1%;
+}
+
+#linksFooter
+{
+    display: block;
+    float: left;
+    margin-left: 7%;
+    margin-right:7%;
+    font-size: 65%;
+}
+
+#contactUsFooter
+{
+    display: block;
+    float: right;
+    margin-right: 2%;
+}
+
+#bottomFooter
+{
+    height: 50px;
+    text-align: center;
+}
+
+
+
+

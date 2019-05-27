@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
+@media all
+{
+    
+    * 
+    {
+        box-sizing: border-box;
+        margin:0;
+
+    }
+
+
+
+    header
+    {
+        text-align: center;
+        font-weight: 900;
+        font-style: italic;
+        font-size: 500%;
+        background-color: rgba(84, 97, 97, 0.815);
+        height: 250px;
+        border-bottom: 5px solid black;
+
+    }
+
+
+    body
+    {
+       
+        margin: 0;
+        text-align: center;
+        font-family: 'Berkshire Swash', cursive;
+    }
+
+    .column
+    {
+        float: left;
+        padding: 16px;
+    }
+
+    .column.sides
+    {
+        width:25%;
+        background-color: rgb(43, 49, 49);
+        height:1920px;
+        border: 5px solid black;
+        border-top-width: 0px;
+        border-bottom-width: 0px;
+    }
+
+    .column.middle
+    {
+        width: 50%;
+        background-color: rgba(84, 97, 97, 0.815);
+    }
+
+    ul
+    {
+    list-style-type: none; 
+    }
+
+    table.center
+    {
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    footer 
+    {
+        text-align: center;
+        padding-top: 2%; 
+    }
+
+    a
+    {
+        color: rgb(4, 4, 41);
+    }
+    a:hover
+    {
+        font-size: 110%;
+        display: block;
+        color:white;
+    }
+}
+
+@media print 
+{
+    * 
+    {
+        box-sizing: border-box;
+        margin:0;
+
+    }
+
+
+
+    header
+    {
+        text-align: center;
+        font-weight: 900;
+        font-family: sans-serif;
+        font-size: 200%;
+        background-color: rgba(255, 255, 255, 0.815);
+        height: 250px;
+
+    }
+
+
+    body
+    {
+        margin: 0;
+        text-align: center;
+        font-family: sans-serif;
+    }
+
+    .column.sides
+    {
+        width:25%;
+        background-color: rgb(43, 49, 49);
+        height:1920px;
+        border: 5px solid rgba(255, 255, 255, 0);
+        border-top-width: 0px;
+        border-bottom-width: 0px;
+    }
+
+    ul
+    {
+    list-style-type: none; 
+    }
+
+    table.center
+    {
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    footer 
+    {
+        text-align: center;
+        padding-top: 2%; 
+    }
+
+    a
+    {
+        color: rgb(0, 0, 0);
+    }
+
+}
+
+
+
+
+
+
+
+

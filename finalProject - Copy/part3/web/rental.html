@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Client Rental</title>
+    <script src="../js/script.js"></script>
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+
+
+    <body>
+            <header>
+                    <figure id="logo">
+                        <img src="../images/logo.jpg" alt="Logo">
+                    </figure>
+                    <h1 id="title">Dodgy Brakes Car Rental</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="../web/about.html">About</a></li>
+                            <li><a href="./web/rental.html">Client Rental</a></li>
+                            <li><a href="../index.html">Home</a></li>
+                        </ul>
+                    </nav>
+                </header>
+        <div class="content">
+        <div id="leftSide">
+            <p></p>
+        </div>
+        <div id="main">
+            <div id="search">
+                <h2>Search for Client:</h2>
+                <input type="text" id="clientSearch" placeholder="Search...">
+            </div>
+            <div>
+                <table id="searchResults">
+
+                </table>
+            </div>
+            <div>
+                <form>
+                    <fieldset id="clientInfo">
+                        <h3>Client Information</h3>
+                        <table>
+                            <tr>
+                                <td>First Name:</td>
+                                <td><input type="text" name="fName" id="fName" readonly></td>
+                            </tr>
+                            <tr>
+                                <td>Last Name:</td>
+                                <td><input type="text" name="lName" id="lName" readonly></td>
+                            </tr>
+                            <tr>
+                                <td>Address:</td>
+                                <td><input type="text" name="address" id="address" size="25" readonly></td>
+                            </tr>
+                            <tr>
+                                <td>State/Province:</td>
+                                <td><input type="text" name="state/prov" id="state/prov" size="8" readonly></td>
+                            </tr>
+                            <tr>
+                                <td>Email:</td>
+                                <td><input type="text" name="EMail" id="EMail" size="30" readonly></td>
+                            </tr>
+                            <tr>
+                                <td>Phone:</td>
+                                <td> <input type="text" name="phone" id="phone" readonly></td>
+                            </tr>
+                        </table>
+                        <div id="aButton">
+                            <Button class="buttonLinks" type="button" id="theForm"
+                                onclick="showRentalForm(event, 'showSecond')" disabled>Next</Button>
+                        </div>
+                    </fieldset>
+
+                </form>
+            </div>
+
+            <div id="showSecond">
+                <form>
+                    <fieldset id="clientInfo">
+                        <h3>Vehicle Type</h3>
+                        <table>
+                            <tr>
+                                <td><input type="radio" name="vehicleType" id="Compact" value=15></td>
+                                <td>Compact ($15.00/day)</td>
+                                <td><img src="../images/compact.jpg" height="168px" width="300px" alt="Compact vehicle">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="vehicleType" id="Mid-Size" value=20></td>
+                                <td>Mid-Size ($20.00/day)</td>
+                                <td><img src="../images/MidSize.jpg" height="168px" width="300px"
+                                        alt="Mid-Size vehicle">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="vehicleType" id="Luxury" value=35></td>
+                                <td>Luxury($35.00/day)</td>
+                                <td><img src="../images/luxury.jpg" height="168px" width="300px" alt="Luxury vehicle">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="vehicleType" id="Van/Truck" value=40></td>
+                                <td>Van/Truck ($40.00/day)</td>
+                                <td><img src="../images/truck.jpg" height="168px" width="300px" alt="Truck vehicle">
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+
+                    <fieldset id="clientInfo">
+                        <h3>Extra</h3>
+
+                        <table>
+                            <tr>
+                                <td><input type="checkbox" name="extra" id="roofRack" value="Roof Rack"></td>
+                                <td>Roof Rack ($5.00/day)</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="extra" id="bicycleRack" value="Bicycle Rack"></td>
+                                <td>Bicycle Rack ($5.00/day)</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="extra" id="gps" value="GPS"></td>
+                                <td> GPS ($10.00/day)</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="extra" id="childseat" value="Child Seat"></td>
+                                <td>Child Seat ($0.00/day)</td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <fieldset id="clientInfo">
+                        <label>Rental Period (days)
+                            <input type="number" name="daysRental" id="daysRental" size="2" min="1" max="30">
+                        </label>
+                    </fieldset>
+                    <div id="aButton">
+                        <button class="buttonLinksTwo" type="button" onclick="calculateTotal();"
+                            id="displayTotal">Calculate
+                            Total</button>
+                    </div>
+                </form>
+            </div>
+            <div id="summary">
+
+                <table id="customerInfo"></table>
+
+
+                <table id="rentalSummary"></table>
+
+            </div>
+        </div>
+        <div id="rightSide">
+            <p></p>
+        </div>
+    </div>
+
+    <footer class="footer">
+     
+    </footer>
+    </body>
+
+
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Cookies</title>
+	<script type="text/javascript" src="cookies.js"></script>
+	<link href="cookies.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onload="currentCookieState()">
+	<h1>Examples of how cookies can work</h1>
+
+	<h3>The values in the following fields are read from a cookie </h3>
+
+	<input type="button" onclick="setUsernameCookie()" value="Set Username Cookie" name="Test">
+	<label class="label" for="username">Username: </label>
+	<input class="input" type="text" id="username" size="25">
+	<br>
+	<input type="button" onclick="setFnameCookie()" value="Set Firstname Cookie" name="Test">
+	<label class="label" for="firstname">Firstname: </label>
+	<input class="input" type="text" id="firstname" size="12">
+	<br>
+	<input type="button" onclick="setLnameCookie()" value="Set Lastname Cookie" name="Test">
+	<label class="label" for="lastname">Lastname: </label>
+	<input class="input" type="text" id="lastname" size="15">
+	<br>
+
+	<h3>The values in the following fields are read from a cookie </h3>
+	<label class="label" for="defusername">Username: </label>
+	<input class="output" disabled="true" type="text" id="defusername" size="25"> <br>
+
+	<label class="label" for="deffirstname">Firstname: </label>
+	<input class="output" disabled="true" type="text" id="deffirstname" size="10"><br>
+
+	<label class="label" for="deflastname">Lastname: </label>
+	<input class="output" disabled="true" type="text" id="deflastname" size="15"> <br>
+
+	<input type="button" onclick="setDefaultCookie()" value="Set Cookie To Default Values" name="Test">
+
+	<div>
+		<p><a href="cookiesNextPage.html">Next Page</a></p>
+	</div>
+</body>
+
+</html>

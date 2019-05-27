@@ -1,0 +1,177 @@
+body
+{
+    
+    width: 100%;
+    height: 100%;;
+    margin: 0%;
+    padding: 0%;
+    display: block;
+    position: relative;
+    font-family: 'Jacques Francois', serif;
+    color:honeydew;
+}
+
+strong, h1
+{
+    color:darkolivegreen;
+}
+
+#saveButton
+{
+    display: block;
+    position: absolute;
+    right:43%;
+    bottom: 55%;
+}
+
+p
+{
+    text-align: center;
+
+}
+
+p.invoiceOutput
+{
+    line-height: 0%;
+}
+
+p.invoiceTitle
+{
+    font-size: 200%;
+    font-weight: bolder;
+}
+
+p.receipt
+{
+    text-align: left;
+}
+
+header
+{
+    font-size: 800%;
+    text-align: center;
+    padding-top: 0%;
+    margin-top: 0%;
+
+}
+
+
+h1
+{
+    font-size: 300%;
+    text-align: center;
+}
+
+h2
+{
+    color:darkolivegreen;
+    font-weight: 900;
+}
+
+#background_image
+{
+    background-image: url("../images/background1.PNG");
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    
+}
+
+#main
+{
+    display:flex;
+    margin:0;
+}
+
+
+#main > article 
+{
+    width: 90%;
+    margin:0;
+    order: 2;
+    padding-left: 5%;
+}
+
+
+
+fieldset.one
+{
+    float:left;
+    height: 550px;
+    width: 250px;
+}
+fieldset.two
+{
+    float:left;
+    width: 40%;
+    height: 550px;
+    width: 250px;
+}
+fieldset.three
+{
+    float:left;
+    height: 550px;
+    width: 250px;
+}
+
+fieldset.four
+{
+    float:left;
+}
+
+th, td.textData 
+{
+    padding: 1px;
+    text-align: left;
+    font-size: 150%;
+}
+
+td
+{
+    padding:1px;
+    text-align: left;
+    font-size: 100%;
+}
+
+table
+{ 
+
+  margin-left:auto; 
+  margin-right:auto;
+  padding: 1%; 
+}
+
+.orderItem
+{
+    float: right;
+    position: relative;
+    width: 50px;
+    height: 30px;
+}
+
+.deleteIcon
+{
+    height: 12px;
+    width:12px;
+}
+
+.deleteButton
+{
+    background-color: black;
+    color: white;
+    outline: none;
+    height: 20px;
+    width:25px;
+    
+}
+
+.orderItem:hover
+{
+    width: 250px;
+    height: 150px;
+}
+
+a
+{
+    color: cadetblue;
+}

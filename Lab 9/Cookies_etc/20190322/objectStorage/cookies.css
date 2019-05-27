@@ -1,0 +1,24 @@
+body
+{
+	font-family: Tahoma;
+}
+
+.input 
+{
+	background-color: white;
+}
+
+.output 
+{
+	background-color: grey;
+	color: white;
+}
+
+.label
+{
+	text-align: left;
+}
+
+img{
+width:600px; height: 300px;
+}

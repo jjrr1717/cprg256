@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+	<head>
+        <title>For Loop Example</title>
+        <script>
+            function Function1() {
+                for (i = 0; i <= 5; i++) {
+                    document.writeln("<p>The number is " + i+ "</p>");
+                }
+            }
+            function Function2() {
+                var text = "";
+                for (i = 0; i <= 5; i++) {
+                    text += "The number is " + i;
+                    document.writeln(text);
+                }
+            }
+
+        </script>
+	</head>
+	<body>
+        <p>Welcome to this Demo</p>
+        <button onclick="Function1()"style="height: 30px; width:60px;">Try Me</button>
+        <button onclick="Function2()"style="height: 30px; width:60px;">Try Me</button>
+
+	</body>
+</html>

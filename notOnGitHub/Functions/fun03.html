@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+	<head>
+        <title>Function Example</title>
+        <p id="dateStamp"></p>
+
+        <script>
+		(function () {  // javascript Anonymous Function Example
+			var setDate = new Date().toDateString();	
+            document.querySelector('#dateStamp').innerHTML = setDate;
+        })();//the (); is calling the function
+		
+        function findBiggest(a,b){
+            var result;
+            a>b? result= a + ' is the Biggest':result=['The Biggest is ', b]; //in between [] is an array
+            document.querySelector('#readFunction').innerHTML=result;
+            //console.log(result); This prints to the console portion in the developers tools
+        }
+        </script>
+
+    </head>
+	<body>
+        <button onclick="findBiggest(17,125)"style="height: 30px; width:90px;">Click Me</button>
+        <p id="readFunction"></p>	
+    </body>
+</html>

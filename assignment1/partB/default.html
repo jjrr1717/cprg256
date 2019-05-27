@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WCF Form</title>
+        <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="./javascript/code.js"></script>  
+    </head>
+
+   
+    <div>
+    <header>
+            <img class="background_image" src="..//partB/images/dollarSign.jpg" width="250" height="150"
+            alt="J Logo">
+        <p>Western Cascade Finance</p>
+    </header>
+    </div>
+
+    <body>
+        <section class="top">
+        <p>Welcome to Western Cascade Finance's Application Form<br>
+           Please fill out the following fields to complete the application</p><br>
+
+           <label>Current Date:<br>     
+            <input type="date" name="date"  required><br>
+            </label> 
+        </section>
+
+        <section class="one">   
+            <form id = "clientInformation">
+
+
+                <label>First Name:<br>     
+                <input id="fName" type="text" name= "firstName"  pattern="[a-zA-Z]+" required autofocus><br>
+                </label>
+
+                <label>Last Name:<br>     
+                <input id="lName" type="text" name = "lastName"  pattern="[a-ZA-Z]+" required><br>
+                </label>    
+
+                <label>Street Address:<br>    
+                <textarea id="address" name="address" rows="3" cols="18" required></textarea><br>
+                </label>
+
+                <label>Postal Code<br>
+                <input id="postalCode" type="text" name="postal code"  
+                  placeholder="A1A-1A1" required><br>
+                </label>
+
+                <label>Phone Number<br>
+                <input id="phone" type="tel" name="telephone"  pattern="\(\d{3}\)\d{3}[\-]\d{4}" 
+                    placeholder="(xxx)xxx-xxxx" required> <br>
+                <input type="radio" name="phoneType" value="Personal" checked>Personal
+                <input type="radio" name="phoneType" value="Business">Business
+                </label><br>
+
+                <label>Email:<br>
+                <input id="eMail" type="email" name="email" placeholder="example@domain.com">
+                </label><br>
+   
+                <label>Are you currenlty a client?
+                <input type="radio" name="currentClient" value="Yes" checked>Yes
+                <input type="radio" name="currentClient" value="No">No
+                </label> <br>
+
+                <label>Gender
+                <input type="radio" name="gender" value="Male" checked>Male
+                <input type="radio" name="gender" value="Females">Female
+                </label><br>
+
+                <label>Age (Min 18 years old):
+                <input id="age" type="number" min="18" name="age" size="3"><br>
+                </label><br>
+
+                <label>Do you own or rent your home?
+                <input type="radio" name="home" value="Own" checked>Own
+                <input type="radio" name="home" value="Rent">Rent 
+                </label><br>
+
+                <label>Annual Gross Income:
+                <input id= "annualGrossIncome" type="number" min="0" name="Income" size="10">
+                </label><br>
+
+               <label>Do you own any of the following?</label>
+               <label>
+                <input name = "own" id = "vehicle" type = "checkbox" value = "Vehicle">Vehicle
+            </label>
+
+            <label> 
+                <input name = "own" id="rrsp" type = "checkbox" value = "RRSP">RRSP
+            </label>
+
+            <label> 
+                <input name = "own" id="tfsa" type = "checkbox" value = "TFSA">TFSA
+             </label>
+
+            <label> 
+                <input name = "own" id="rrif" type = "checkbox" value = "RRIF">RRIF
+            </label> 
+
+               <input type="submit" value="Submit">
+               <input type="reset" name="Clear" value="Clear">
+               
+           </form>
+           <button type="button" onclick="createClient(); return false">Show Client</button>
+           <p><span style="text-align: center;" id="showTheClient"></span></p> <br>
+        </section>
+
+        
+        
+       
+     </body>
+     <footer>
+         <p>Background referece: <a href="https://pngtree.com/free-backgrounds">free background photos from pngtree.com</a></p>
+         <p></p>Logo reference:  <a href="https://pngtree.com/free-backgrounds">free background photos from pngtree.com</a></p>
+     </footer>  
+</html>

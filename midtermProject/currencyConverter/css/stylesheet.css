@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Volkhov');
+
+
+*
+{
+    margin: 0;
+}
+
+header
+{
+    text-align: center;
+    height: 50px;
+    border-bottom: 10px solid  #000000;
+    font-size: 200%;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+
+span
+{
+    font-size: 50%;
+}
+
+body
+{
+    background-color: rgb(235, 216,2);
+    text-align: center;
+    font-family: 'Volkhov', serif;
+}
+
+
+
+h1
+{
+    font-size: 400%;
+}
+
+table.center 
+{ 
+
+  margin-left:auto; 
+  margin-right:auto; 
+}
+
+p
+{
+    font-weight: bolder;
+    font-size: 150%;
+    color: black;
+}
+
+table
+{
+    border: 5px double black;
+    opacity: 1;
+    
+}
+
+tr
+{
+    padding: 5%;
+    size: 300px;
+}
+
+nav
+{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right:0;
+    font-size:50%;
+
+}
+
+a
+{
+    color: white;
+}
+
+a.current
+{
+    color:black;
+    background-color: rgb(235, 216,2);
+}
+
+
+
+
+
+
+

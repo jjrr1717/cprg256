@@ -1,0 +1,57 @@
+
+input[type=text]
+{
+    background-color: white;
+    background-image: url('../images/searchIcon.png');
+    background-position: 5px 1px;
+    background-repeat: no-repeat;
+    padding-left:25px;
+    background-size: 15px;
+}
+
+label
+{
+    font-weight: bold;
+}
+
+p
+{
+    font-weight: bolder;
+    font-size: 150%;
+}
+
+
+
+th
+{
+    text-align: left;
+    size: 100px;
+    border-bottom: 1pt solid black;
+    
+}
+
+td
+{
+    text-align: left;
+    size: 100px;
+    border-bottom: 1pt solid black;
+}
+
+tr:hover {
+    background-color:white;
+    color: black;
+  }
+
+table
+{
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+
+body
+{
+    background-color: rgb(16, 86, 136);
+    text-align: center;
+}
+

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NewCityBakeryHome</title>
+        <link href="./css/stylesheet.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="./js/code.js"></script>
+    </head>
+
+    <header class="headerBackground">
+        <h1>New City Bakery</h1>
+        <p class="headerContact">Phone: (403)231-4567 Email: contactus@newcitybakery.com</p>
+    </header>
+    <body>
+        <div id="main">
+
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Cakes</a></li>
+                    <li><a href="#">Pastries</a></li>
+                    <li><a href="#">Order Online</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </nav>
+            <article>
+                
+        <form>
+            <fieldset id="cakeType">
+            <h2>Select Type of Cake</h2>
+            <input type="radio" name="cakeType" id="sheetCake" value="18.00" onclick="makeSelectionActive();"><label>Sheet Cake</label>
+            <input type="radio" name="cakeType" id="roundCake" value="15.00" onclick="makeSelectionActive();"><label>Round Cake</label>
+        </fieldset>
+   
+  
+        <fieldset id = "sheetCakeSection" disabled = "true">
+        <h2>Sheet Cake</h2>
+        <p>Base price: $18.00</p>
+        <p>$0.02 per cm<sup>2</sup> over base</p>
+        <p>Adding layers increases base cost by 50%</p>
+        <label>Length (min 30cm, max 60cm):</label><br>
+        <input type="range" min="30" max="60" maxlength="2" size="3" id="cakeLength"><br>
+        <label>Width (min 30cm, max 60cm):</label><br>
+        <input type="number" min="30" max="60" maxlength="2" size="3" id="cakeWidth"><br>
+        <label>Number of Layers (max 3) </label><br>
+        <select id="sheetCakeLayer">
+            <option value="0">(select layers)</option>
+            <option value="0">1</option>
+            <option value="1">2</option>
+            <option value="2">3</option>
+        </select> 
+        </fieldset>  
+   
+
+
+            <fieldset id="roundCakeSection" disabled = "true">
+            <h2>Round Cake</h2>
+            <p>Base price: $15.00</p>
+            <p>$0.02 per cm<sup>2</sup> over base</p>
+            <p>Adding layers increases base cost by 50%</p>
+            <label>Radius Size (min 15cm, max 30cm)</label><br>
+            <input type="number" min="15" max="30" maxlength="3" size="3" id="cakeRadius"><br>
+            <label>Number of Layers (max 3)</label><br>
+            <select id="roundCakeLayer">
+                    <option value="0">(select layers)</option>
+                    <option value="0">1</option>
+                    <option value="1">2</option>
+                    <option value="2">3</option>
+                </select> 
+            </fieldset>
+    
+
+  
+            <fieldset>
+            <h2>Additional Choices</h2>
+            <input type="checkbox" name="extra" id="creamCheese" value="5.00"><label>Cream Cheese Icing ($5.00)</label> <br>
+            <input type="checkbox" name="extra" id="fruitAlmonds" value="7.00"><label>Fruit & Almond Toppings ($7.00)</label> <br>
+            <input type="checkbox" name="extra" id="fruitJam" value="4.00"><label>Fruit & Jam Filling ($4.00)</label>
+        </fieldset>
+   
+
+      
+            <fieldset>
+                <h2>Your Information</h2>
+                <table class="center">
+                    <thead></thead>
+                    <tbody>
+                        <tr>
+                            <td><label>First Name:*</label></td>
+                            <td><label>Last Name:*</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="FirstName" placeholder="First Name" pattern="[a-zA-Z\-\s]+" autofocus required></td>
+                            <td><input type="text" id="LastName" placeholder="Last Name" pattern="[a-zA-Z\-\s]+"  required></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><label>Address:*</label></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="text" id="Address" placeholder="Address" size="47" required></td>
+                        </tr>
+                        <tr>
+                            <td><label>Postal Code:*</label></td>
+                            <td><label>Phone #:*</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" id="PostalCode" placeholder="A1A 1A1" maxlength="7" pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" required></td>
+                            <td><input type="tel" id="Phone" placeholder="xxx-xxx-xxxx" maxlength="12" pattern="\d{3}\-\d{3}\-\d{4}" required></td>
+                        </tr>
+                        <tr>
+                            <td><label>Email:*</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="email" id="Email" placeholder="example@domain.com" required></td>
+                        </tr>
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+                <input type="submit" onsubmit="showInvoice()">
+        </fieldset>
+        
+        </form>
+
+        <p id="title"></p>
+        <p id="customerName"></p>
+        <p id="customerAddress"></p>
+        <p id="postalCode"></p>
+        <p id="customerPhone"></p> 
+        <p id="customerEmail"></p>
+        <p id="label"></p>
+        <P id="items"></P>
+       
+
+
+    </article>
+        <aside>
+            <p></p>
+        </aside>
+    </div>
+    </body>
+    <footer>
+        <div class="footerSection">
+            <div class="leftSection">
+                <h3>Hours of Operation</h3>
+                <p>Monday-Friday: 10am-6pm</p>
+                <p>Saturday-Sunday: 10am-2pm</p>
+                <p>Holidays: Closed</p>
+            </div>
+            <div class="middleSection">
+                <p>&copy New City Bakery</p>
+            </div>
+            <div class="rightSection">
+                <h3>Location</h3>
+                <p>1600 New McKenzie Drive</p>
+                <p>Calgary, AB</p>
+            </div>
+        </div>
+
+    </footer>
+</html>

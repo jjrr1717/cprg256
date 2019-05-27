@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Control</title>
+
+<script type="text/javascript">
+
+//show is a global variable
+var show="false";
+
+function showOrHide() {
+
+if (show=="false") {
+
+document.getElementById("showthis").style.visibility="visible";
+show="true";
+	
+}
+else {
+//show is true
+document.getElementById("showthis").style.visibility="hidden";
+show="false";
+}
+
+}
+//setvisible() accept value and displays text fields
+function setvisible(val) {
+//use display
+	if (val==1) {
+				document.getElementById("set1").style.visibility="visible";
+				document.getElementById("set2").style.visibility="hidden";
+				document.getElementById("set3").style.visibility="hidden";
+	}
+	if (val==2) {
+				document.getElementById("set1").style.visibility="hidden";
+				document.getElementById("set2").style.visibility="visible";
+				document.getElementById("set3").style.visibility="hidden";
+	}
+	if (val==3) {
+				document.getElementById("set1").style.visibility="hidden";
+				document.getElementById("set2").style.visibility="hidden";
+				document.getElementById("set3").style.visibility="visible";
+	}
+}
+
+</script>
+</head>
+
+<body>
+
+	<h2>Examples of how to control what is displayed on a page</h2>
+
+	<input type="button" value="Hide/Unhide" onclick="showOrHide()">
+
+	<div id="showthis" style="visibility:hidden;">
+		<h2>We can show or hide this message</h2>
+	</div>
+
+	<h2>Control Display Value Using Buttons</h2>
+
+	<input type="radio" name="inputcontrol" value="1" onchange="setvisible(this.value)">Show Text Field 1</input>
+	<input type="radio" name="inputcontrol" value="2" onchange="setvisible(this.value)">Show Text Field 2</input>
+	<input type="radio" name="inputcontrol" value="3"  onchange="setvisible(this.value)">Show Text Field 3</input>
+
+	<h2>Text Fields</h2>
+	<p><h3>Text Field 1</h3><input type="text" size="10" id="set1"style="visibility:hidden;" placeholder="Hello"></p>
+	<p><h3>Text Field 2</h3><input type="text" size="10" id="set2"style="visibility:hidden;" placeholder="Hi"></p>
+	<p><h3>Text Field 3</h3><input type="text" size="10" id="set3"style="visibility:hidden;" placeholder="Bye"></p>
+</body>
+</html>

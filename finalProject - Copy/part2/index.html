@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quiz</title>
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+
+</head>
+<header>
+
+    <h1>Web Quiz</h1>
+
+</header>
+
+<body class="background">
+    <script src="./js/script.js"></script>
+    <div id="leftSide">
+        <p></p>
+
+    </div>
+    <div id="theQuiz">
+        <Button class="button" type="button" onclick="displayQuiz(); showGradeButton();" id="showQuiz">Start
+            Quiz</Button>
+        <tabel id="quizLocation">
+        </tabel>
+        <Button class="button" type="button" style="visibility: hidden;" onclick="gradeQuiz();"
+            id="gradeQuiz">Grade</Button>
+
+        <div>
+            <span id="results"></span>
+        </div>
+
+    </div>
+
+    <div id="rightSide">
+        <p></p>
+    </div>
+</body>
+
+</html>

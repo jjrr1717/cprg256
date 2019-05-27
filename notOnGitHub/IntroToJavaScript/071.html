@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Demo</title>   
+<script>
+    function setHeaders(){
+        document.getElementById('start').innerHTML='Invoice:';
+        document.getElementById('heading1').innerHTML='Price';
+        document.getElementById('heading2').innerHTML='Quantity';
+        document.getElementById('value1').innerHTML='2.99';
+        document.getElementById('value2').innerHTML='10';
+        document.getElementById('myTable').border=1;
+    }
+</script>
+</head>
+<body>
+<p>Welcome to the JS testing pad!</p>
+<h3 id="start"></h3>
+<table id="myTable">
+    <tr><td id="heading1"></td><td id="heading2"></td></tr>
+    <tr><td id="value1"></td><td id="value2"></td></tr>
+</table>
+<button type="button" onclick="setHeaders()">Create Data</button>
+
+</body>
+</html>

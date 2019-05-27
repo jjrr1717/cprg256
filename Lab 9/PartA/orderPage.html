@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Order Page</title>
+    <link href="./css/stylesheet.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./js/code3.js"></script>
+    <script type="text/javascript" src="./js/cookies.js"></script>
+</head>
+
+<header>
+    <em style="font-size: 10%; float:right; display: block; margin: 0%;">Today's Date: <span id="theDate"></span></em>
+    <p style="margin:0%;"><strong>City Delicatessen</strong></p>
+</header>
+
+<body onload="checkCookies();" id="background_image">
+    <div id="main">
+        <nav>
+            <p></p>
+        </nav>
+        <article>
+            <h1>Order Online</h1>
+
+            <!-- <form onsubmit="createInvoice(); return false;"> -->
+            <form id = "order">
+                <fieldset>
+                    <h1 id="customizedMessage"></h1><br>
+                    <p id = "lastVisitMessage"></p>
+                    <h2 style="text-align:center;">Enter Delivery Information:</h2>
+
+                    <table class="center">
+                        <thead></thead>
+                        <tbody>
+                            <tr>
+                                <td><label>First Name:</label></td>
+                                <td><label>Last Name:</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" id="customer" placeholder="First Name" pattern="[a-zA-Z\-\s]+"
+                                        required></td>
+                                <td><input type="text" id="LastName" placeholder="Last Name" pattern="[a-zA-Z\-\s]+"
+                                        required></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><label>Address:</label></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><input type="text" id="Address" placeholder="Address" size="47"
+                                        required></td>
+                            </tr>
+                            <tr>
+                                <td><label>Phone #:</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="tel" id="Phone" placeholder="(xxx)xxx-xxxx"
+                                        pattern="\(\d{3}\)\d{3}\-\d{4}" required></td>
+                            </tr>
+                        </tbody>
+                        <tfoot></tfoot>
+                    </table>
+                    <Button id="saveButton" type="button" onclick="createCustomerOrder();setCustomerNameCookie();setLastVisitCookie();return false;">Save</Button>
+                    
+                </fieldset>
+                <fieldset class="one">
+                    <h2>Select your pizza:</h2>
+                    <label>
+                        <input id="cheese" type="radio" name=pizzaName value="Super Cheesy">
+                        Super Cheesy</label>
+                    <figure>
+                        <img class = "orderItem" src="./images/cheesePizza.jpg" alt="Cheese Pizza">
+                    </figure>
+                    <br>
+                    <label>
+                        <input id="meat" type="radio" name=pizzaName value="Extra Meaty">
+                        Extra Meaty</label>
+                    <figure>
+                        <img class = "orderItem" src="./images/meatPizza.jpg" alt="Cheese Pizza">
+                    </figure>
+                    <br>
+                    <label>
+                        <input id = "veggie" type="radio" name=pizzaName value="Really Veggie">
+                        Really Veggie</label>
+                    <figure>
+                        <img class = "orderItem" src="./images/veggiePizza.jpg" alt="Cheese Pizza">
+                    </figure>
+                    <br>
+
+                    <h4>Select Pizza Size:</h2>
+                        <label>
+                            <input type="radio" name=pizzaSize id="Small" value="Small">
+                            Small ($8.50)</label><br>
+                        <label>
+                            <input type="radio" name=pizzaSize id="Medium" value="Medium">
+                            Medium ($11.50)</label><br>
+                        <label>
+                            <input type="radio" name=pizzaSize id="Large" value="Large">
+                            Large ($14.00)</label><br>
+                        <label>
+                            <input type="radio" name=pizzaSize id="ExtraLarge" value="Extra Large">
+                            Extra Large ($16.50)</label><br>
+
+                        <h4>Extra Toppings ($1.75 each)</h2>
+                            <label>
+                                <input type="checkbox" id = "extraCheese" name=extraCheese value="Extra Cheese">
+                                Extra Cheese</label><br>
+                            <label>
+                                <input type="checkbox" id="extraMushrooms" name=extraMushrooms value="Extra Mushrooms">
+                                Mushrooms</label><br>
+                            <label>
+                                <input type="checkbox" id="extraOlives" name=extraOlives value="Extra Olives">
+                                Olives</label><br>
+                            <label>Quantity
+                                <input type="text" id="pizzaQuantity">
+                            </label>
+
+                            <Button type="button" onclick="addPizza()" name="addPizzaToOrder">Add To Order</Button>
+                </fieldset>
+
+                <fieldset class="two">
+                    <h2>Select your Sandwich:</h2>
+                    <label>
+                        <input type="radio" name=sandwichName id="All Garden Vegetarian" value="All Garden Vegetarian">
+                        All Garden Vegetarian ($7.50)</label>
+                    <figure>
+                        <img class = "orderItem" src="./images/veggieSandwich.jpg" alt="Cheese Pizza">
+                    </figure>
+                    <br>
+                    <label>
+                        <input type="radio" name=sandwichName id="Big Beef on a Bun" value="Big Beef on a Bun">
+                        Big Beef on a Bun ($8.50)</label>
+                    <figure>
+                        <img class = "orderItem" src="./images/beefSandwichjpg.jpg" alt="Cheese Pizza">
+                    </figure>
+                    <br>
+                    <label>
+                        <input type="radio" name=sandwichName id="Mixed Grill" value="Mixed Grill">
+                        Mixed Grill ($9.50)</label>
+                    <figure>
+                        <img class = "orderItem" src="./images/mixedGrill.jpg" alt="Cheese Pizza">
+                    </figure>
+                    <br>
+                    <label>Quantity:
+                        <input type="text" id="sandwichQuantity" value="0" size="5" pattern="[0-9]+">
+                    </label><br>
+                    <Button type="button" onclick="addSandwhich()" name="addPizzaToOrder">Add To Order</Button>
+                </fieldset>
+
+                <fieldset class="three">
+                    <h2>Select your Drink</h2>
+                    <label>
+                        <input type="radio" id="cola" name=drink value="Cola">
+                        Cola</label><br>
+                    <label>
+                        <input type="radio" id="sprite" name=drink value="Sprite">
+                        Sprite</label><br>
+                    <label>
+                        <input type="radio" id="rootBeer" name=drink value="Root Beer">
+                        Root Beer</label><br>
+
+                    <h4>Select Drink Size:</h3>
+                        <label>
+                            <input type="radio" name=drinkSize id="smallDrink" value="Small">
+                            Small ($1.25)</label><br>
+                        <label>
+                            <input type="radio" name=drinkSize id="mediumDrink" value="Medium">
+                            Medium ($1.75)</label><br>
+                        <label>
+                            <input type="radio" name=drinkSize id="largeDrink" value="Large">
+                            Large ($2.00)</label><br>
+                        <label>Quantity:
+                            <input type="text" id="drinkQuantity" value="0" size="5" pattern="[0-9]+">
+                        </label><br>
+                        <Button type="button" onclick="addDrink()" name="addPizzaToOrder">Add To Order</Button>
+                </fieldset>
+                <!-- <Button type="button" value="Calculate Total" onclick="createInvoice()">Calculate Total </Button> -->
+            </form>
+
+            <fieldset>
+                <h2>Cart:</h2>
+                <table>
+                    <tr>
+                        <td id="customerInfo" style="color:white;"></td>
+                    </tr>
+                </table>
+                <table id="showOrder">
+                </table>
+                <table>
+                    <tr>
+                        <td id="grandTotalWord" style="color:white;"></td>
+                        <td id="grandTotal" style="color:white;"></td>
+                    </tr>
+                </table>
+                <input id="submit" type="submit" value="submit">
+                <Button id="edit" onclick="changeCustomerOrder()" type = "button" value="edit">Edit</Button>
+            </fieldset>
+
+        </article>
+        <aside id="main">
+            <p></p>
+        </aside>
+    </div>
+</body>
+
+<footer>
+    <p> <a href="https://pngtree.com/free-backgrounds">Free background photos from pngtree.com</a>
+        <a href="https://en.wikipedia.org/wiki/New_York-style_pizza">Cheese Pizza Picture</a>
+        <a href="https://www.goodlifeeats.com/supreme-veggie-pizza-with-mozzarella-and-feta/">Veggie Pizza Picture</a>
+        <a href="http://iamafoodblog.com/the-ultimate-meat-lovers-pizza/">Meat Pizza Picture</a>
+        <a href="https://heatherchristo.com/2016/03/16/ultimate-verde-veggie-sandwich/">Veggie Sandwich Picture</a>
+        <a href="https://www.tasteofhome.com/recipes/savory-beef-sandwiches/">Beef Sandwich Picture</a>
+        <a href="https://www.kraftrecipes.com/recipe/164438/saucy-bbq-mixed-grill">Grilled Sandwich Picture</a></p>
+
+</footer>
+
+</html>

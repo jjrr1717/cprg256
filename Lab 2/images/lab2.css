@@ -1,0 +1,81 @@
+/*lab1.css - stylesheet examples*/
+
+body
+{
+
+	background-color: rgb(0, 0, 0);
+	
+	
+
+}
+
+
+h1
+{
+	font-family: Arial, Helvetica;
+	
+	color: rgb(155, 159, 253);
+}
+
+h2
+{
+	font-family: Arial, Helvetica;
+	
+	font-style: italic;
+	color:  rgb(115, 159, 253);
+}
+
+p
+{
+ font-family: Arial, Helvetica;
+	
+	font-style: italic;
+	color:  rgb(115, 159, 253);
+}
+
+li
+{
+font-family: Arial, Helvetica;
+font-style: italic;
+color:  rgb(115, 159, 253);
+
+}
+
+caption
+{
+	color: rgb(115, 159, 253);
+}
+
+tr
+{
+	color: rgb(115, 159, 253);
+}
+
+td
+{
+	color: rgb(115, 159, 253);
+}
+strong
+{
+	color: rgb(115, 159, 253);
+}
+
+label
+{
+	color: rgb(115, 159, 253);
+}
+
+a:hover
+{
+	color: rgb(37, 168, 201);
+}
+
+form
+{
+	text-align: center;
+}
+
+label 
+{
+	text-align: center;
+}

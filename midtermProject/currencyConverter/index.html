@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Currency Converter</title></head>
+    <link href="./css/stylesheet.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./js/code.js"></script>
+
+    <header>
+        <!--This is a fake navigation system.  This is just to make the site look more complete-->
+        <nav>
+                <a href="#">Home</a>
+                <a href="#" class="current">Converter</a>
+                <a href="#">About</a>
+                <a href="#">Contact Us</a>
+        </nav>
+
+    </header>
+
+    <body>
+
+        <p><span id="currentDate"></span></p>
+
+        <h1>Currency Converter</h1>
+        <p style="height:50px;"></p>
+        <p>Using the drop down menus, please select the currencies you want to compare.</p>
+        <p>This converter allows you to enter values in both the "From" and the "To" fields.</p>
+        <p>The exchange rates came from <a href="https://themoneyconverter.com/CAD/KHR.aspx">The Money Converter.</a></p>
+        <p style="height:50px;"></p>
+            <table class="center">
+                <tr>
+                    <td><p>From:</p></td>
+                    <td><p>To:</p></td>
+                </tr>
+                <tr>
+                    <td><select id="fromOptions" onchange="getFromCurrencySelection()">
+                            <option value="0" selected>(select:)</option>
+                            <option value="1">Euro</option>
+                            <option value="2">US Dollar</option>
+                            <option value="3">UK Pound Sterling</option>
+                            <option value="4">Japanese Yen</option>
+                            <option value="5">Canadian Dollar</option>
+                        </select></td>
+                    <td><select id="toOptions" onchange="getToCurrencySelection()">
+                            <option value="0" selected>(select:)</option>
+                            <option value="1">Euro</option>
+                            <option value="2">US Dollar</option>
+                            <option value="3">UK Pound Sterling</option>
+                            <option value="4">Japanese Yen</option>
+                            <option value="5">Canadian Dollar</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td><p>Amount:</p></td>
+                    <td><p>Amount:</p></td>
+                    
+                </tr>
+                <tr>
+                    <td><input type="number" min="0" id="fromAmount" onchange="convertFromAmountValue(this.value);" 
+                                oninput="convertFromAmountValue(this.value);"></td>
+                    <td><input type="number" min="0" id="toAmount" onchange="convertToAmountValue(this.value);" 
+                                oninput="convertToAmountValue(this.value);"></td>
+                </tr>
+                <tr>
+                    <td><p>Rate: <input type="text" size = 5 id="currencyRate" readonly> </p></td>
+                </tr>
+            </table>
+
+    </body>
+    <footer></footer>
+</html>

@@ -1,0 +1,78 @@
+body
+{
+    height: 500%;
+    width: 80%;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 26, 255, 0.555), rgb(52, 202, 64)); 
+    text-align: center;
+
+
+}
+
+section 
+{
+    width: 80%;
+}
+
+h1
+{
+    font-family: "Indie Flower", cursive;
+    font-size: 400%;
+    color: black;
+}
+
+p
+{
+    font-family: sans-serif;
+    font-size: 100%;
+    color: black;
+}
+
+p::first-letter
+{
+    font-size: 150%;
+    font-family: cursive;
+    font-weight: bolder;
+    color: darkviolet;
+}
+
+.sectionOne
+{
+    height: 200%;
+    text-align: center;
+    
+}
+
+img
+{
+    width: 200px;
+}
+
+figure
+{
+    float: left;
+
+}
+
+figure.one 
+{
+    float: right;
+}
+
+a 
+{
+    color: blue;
+}
+
+a:hover
+{
+    color: brown;
+    font-size: 125%;
+}
+
+footer 
+{
+    padding: 1%;
+}
+

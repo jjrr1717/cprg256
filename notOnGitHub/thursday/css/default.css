@@ -1,0 +1,93 @@
+/* vh, vw: relative lenght*/
+
+* 
+{ 
+  box-sizing: border-box; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 100%;
+}
+
+body 
+{ display: flex; min-height: 100vh;  
+  flex-direction: column; margin: 0; 
+}
+
+#main 
+{ 
+  display: flex; 
+}
+
+/* Combinator - child selector */
+#main > article 
+{ 
+  order: 3; min-width: 12em; flex:1; 
+} 
+
+#main > nav     
+{ 
+  order: 1; width: 120px; height: 40vh;
+    background: beige;
+}
+
+#main > aside   
+{ 
+  order: 2; width: 180px; height: 40vh;
+  background: beige;
+}
+  
+    /* background-image: url(../image/logo.jpg);
+    background-repeat: no-repeat;
+    margin: 0 auto ;  */
+
+header
+{ 
+  background: rgb(223, 238, 192); height: 5vh; 
+  text-transform: uppercase;
+  color: green;
+  text-align: center;
+}
+
+footer  
+{ 
+  background: rgb(223, 238, 192); height: 5vh; 
+  text-transform: uppercase;
+  color: green;
+  text-align: center;
+}
+
+
+header, footer, article, nav, aside 
+{ 
+  padding: 2%; 
+}
+
+/* Pseudo elements*/
+p.intro::first-letter 
+{ 
+  font-size:200%; color: red; 
+}  
+
+nav 
+{
+  display: block;
+} 
+
+ul 
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li a {
+  display: block;
+  color:black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a:hover 
+{
+  background-color:black;
+  color: white;
+} 

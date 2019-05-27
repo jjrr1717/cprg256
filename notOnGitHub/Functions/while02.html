@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+	<head>
+        <title>While Loop Example</title>
+        <script>
+            function wFunction() {
+                var change = 0;
+                while(change <=5){
+                        document.writeln('<p>The number is ' + change + '</p>');
+                        // console.log('<p>The number is ' + change + '</p>');
+                        change++;
+                }
+                        // document.querySelector('#output').innerHTML=change+' iterations';  // works with console only
+            }
+                
+        </script>
+	</head>
+	<body>
+                <p>Welcome to this Demo</p>
+                <button onclick="wFunction()" style="height: 30px; width:60px;">Try Me</button>
+                <p id="output"></p>
+        </body>
+</html>

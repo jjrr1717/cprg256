@@ -1,0 +1,45 @@
+div
+{
+    width: 100%;
+    height: 58em;
+    margin: 0%;
+    display: block;
+    position: relative;
+
+}
+
+div::after
+{
+    content: "";
+    background: url(pink.jpg);
+    background-size: cover;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+p
+{
+    text-align: center;
+}
+
+h1 
+{
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 400%;
+    text-align: center;
+    color: black;
+}
+
+label
+{
+    font-family: fantasy; 
+    font-size: 200%;
+    color: rgb(0, 0, 0);
+    font-weight: 900; 
+     
+}

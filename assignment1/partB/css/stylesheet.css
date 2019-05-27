@@ -1,0 +1,95 @@
+*
+{
+    margin:0;
+    padding:0;
+}
+header
+{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+div
+{
+    width: 100%;
+    height: 150px;
+    margin: 0%;
+    padding: 0%;
+    display: block;
+    position: relative;
+    color:white;
+    font-size: 500%;
+
+}
+
+div::after
+{
+    content: "";
+    background: url(../images/Texture.jpg);
+    background-size: cover;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.background_image
+{
+    
+    position: absolute;
+    top: 0%;
+    left:0%;
+    background-repeat: repeat;
+    border-radius: 100px;
+
+}
+
+body
+{
+    background-color: slategray;
+}
+
+section
+{   
+    display: block;
+
+}
+
+section.one
+{
+    /*columns: 2;*/
+    column-gap: 10%;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 20%;
+    margin-left:28%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+section.two
+{
+    text-align: center;
+}
+
+section.top
+{
+    font-weight: bolder;
+    font-size: 150%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+label
+{
+
+    display: block;
+    color: rgb(0, 0, 0);
+    font-weight: 900; 
+     
+}

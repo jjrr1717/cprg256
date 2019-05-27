@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- Autocomplete search form. -->
+<html>
+   <head>
+      <title>Autocomplete with datalist</title>
+   </head>
+
+   <body>
+      <h2>Autocomplete with datalist:</h2>
+      <form method = "post" autocomplete = "on">
+         <h3>Enter a search query</h3>
+         <p><label>Search
+            <input type = "search" id = "searchQuery" 
+               placeholder = "Enter search query"></label></p>
+         <h3>Enter a day of the week</h3>      
+         <p><label>Day:
+            <input type = "text" id = "weekday" list = "days"
+               placeholder = "Enter day of week"></label></p>
+            <datalist id = "days">
+               <option value = "Sunday">
+               <option value = "Monday">
+               <option value = "Tuesday">
+               <option value = "Wednesday">
+               <option value = "Thursday">
+               <option value = "Friday">
+               <option value = "Saturday">
+            </datalist>
+         <p><input type = "submit" value = "Submit">
+            <input type = "reset" value = "Clear"></p>   
+      </form>
+   </body>
+</html>

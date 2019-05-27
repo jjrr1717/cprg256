@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Demo</title>   
+<script>
+    function setHeaders(){
+        document.getElementById('start').innerHTML='Invoice:';
+        document.getElementById('heading1').innerHTML='Price';
+        document.getElementById('heading2').innerHTML='Quantity';
+        document.getElementById('heading3').innerHTML='Sub Total';
+        document.getElementById('value1').innerHTML='2.99';
+        document.getElementById('value2').innerHTML='10';
+        document.getElementById('myTable').border=1;
+    }
+    function calcSubTotal(){
+        var var1=parseFloat(0);
+        var var2=parseFloat(0);
+
+        var1=myTable.rows[1].cells[0].innerHTML;
+        var2=myTable.rows[1].cells[1].innerHTML;
+
+        document.getElementById('value3').innerHTML= (var1*var2).toFixed(2);
+    }
+    // function calcSubTotal(){
+    //     var var1=parseFloat(myTable.rows[1].cells[0].innerHTML);
+    //     var var2=parseFloat(myTable.rows[1].cells[1].innerHTML);
+    //     document.getElementById('value3').innerHTML= (var1*var2).toFixed(2);
+    // }
+</script> 
+</head>
+<body>
+<p>Welcome to the JS testing pad!</p>
+<h3 id="start"></h3>
+<table id="myTable">
+    <tr><td id="heading1"></td><td id="heading2"></td><td id="heading3"></td></tr>
+    <tr><td id="value1"></td><td id="value2"></td><td id="value3"></td></tr>
+</table>
+<button type="button" onclick="setHeaders()">Create Data</button>
+<button type="button" onclick="calcSubTotal()">Calculate</button>
+
+</body>
+</html>

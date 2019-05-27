@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Buttons and Check Boxes</title>
+<script type="text/javascript" src="09.js">
+</script>
+</head>
+
+<body>
+<p>Today is: <span id="dtfield" ></span></p>
+
+<form name=costEstimation>
+        <fieldset>
+                <legend>Choose Gift Box Type:</legend>
+                <input type=radio name=specialty value=5>Plain Box
+                <input type=radio name=specialty value=7>Deluxe Box
+                <input type=radio name=specialty value=10>Premium Box
+        </fieldset>
+        <fieldset>
+                <legend>Choose Gift:</legend>
+                <input type=checkbox name=earrings>Earrings
+                <input type=checkbox name=watch>Watch
+                <input type=checkbox name=necklace>Necklace
+        </fieldset>
+        <input type=button value="Price your gift" onClick="buttonandchecks();">
+</form>
+
+<h4>Gift Description: </h4><h4><span id="result"></span></h4>
+
+</body>
+</html>

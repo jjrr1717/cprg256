@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Homemade+Apple');
+
+*
+{
+    margin: 0;
+    
+}
+
+#mainHeader
+{
+    height: 150px;
+    background-color: #000000;
+    text-align: center;
+    line-height: 90px;
+    font-family: 'Homemade Apple', cursive;
+    font-weight: 900;
+    font-size: 200%;
+    padding-top: 5%;
+    padding-bottom: 1%;
+    border-bottom: 10px solid black;
+    color: white;
+
+
+}
+
+nav
+{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 75%;
+    
+}
+
+a
+{
+    color: blanchedalmond;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: lightskyblue;
+}
+
+.selected
+{
+    
+    text-decoration: underline;
+    color: blanchedalmond
+    
+   
+}
+
+
+#headerTop
+{
+    height: 50px;
+    text-align: right;
+    background-color: #000000;
+    color: white;
+    position: fixed;
+    width: 100%;
+    
+    
+}
+
+fieldset
+{
+    border-style: solid;
+    margin-bottom: 5%;
+}
+
+body 
+{
+    background-color: #fffce8;
+
+
+}
+
+h2
+{
+    font-size: 180%;
+    text-align: center;
+}
+
+.footerSection
+{
+    width: 100%;
+    height: 100px;
+    background-color: #000000;
+    background-position: 0 0, 15px 15px;
+    color: white;
+    margin-bottom: 0;
+
+}
+
+
+
+.leftSection
+{
+    width:33%;
+    height: 100%;
+    float: left;
+    text-align: center;
+
+
+}
+
+.middleSection
+{
+
+    width:33%;
+    height: 100%;
+    float: left;
+    text-align: center;
+
+
+}
+
+.rightSection
+{
+    width:33%;
+    height: 100%;
+    float: left;
+    text-align: center;
+
+
+}
+
+#main
+{
+    display:flex;
+    margin:0;
+    font-size: 125%;
+}
+
+#pArticle
+{
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+#addToOrder
+{
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+#orderBtn
+{
+    width: 150px;
+    font-size: 125%;
+}
+
+#main > nav 
+{
+    display: block;
+    width: 15%;
+    order: 1;
+    border-bottom: none;
+    line-height: 200%;
+    padding-left: 1%;
+    background-color: #dd403a;
+}
+
+#main > article 
+{
+    width: 60%;
+    margin:0;
+    order: 2;
+    text-align: left;
+    padding-left: 15%;
+    padding-right: 15%;
+    background-color: #dd403a;  /*#77685d;*/
+   
+    
+}
+
+#main > aside 
+{
+    display: block;
+    width: 15%;
+    order: 3;
+    padding-right:5%;
+    background-color:#dd403a;
+
+
+}
+
+table
+{
+    margin-left: auto;
+    margin-right: auto; 
+    
+}
+
+#title
+{
+    font-weight: 900;
+    font-size: 125%;
+    text-align: center;
+}
+
+.invoiceData
+{
+    padding: 2%;
+}
+
